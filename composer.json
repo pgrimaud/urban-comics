@@ -1,5 +1,25 @@
 {
-    "require": {
-        "fabpot/goutte": "^3.1"
+  "name": "pgrimaud/urban-comics",
+  "type": "library",
+  "description": "Little scraper for http://www.urban-comics.com/",
+  "homepage": "https://github.com/pgrimaud/urban-comics",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Pierre Grimaud",
+      "email": "grimaud.pierre@gmail.com"
     }
+  ],
+  "autoload": {
+    "psr-4": {
+      "UrbanComics\\": "src/"
+    }
+  },
+  "require": {
+    "fabpot/goutte": "^3.1"
+  },
+  "require-dev": {
+    "codeclimate/php-test-reporter": "^0.3.2",
+    "phpunit/phpunit": "^5.6"
+  }
 }
