@@ -24,9 +24,9 @@ class Scraper
     public function getComics(array $parameters)
     {
         $this->validateParameters($parameters);
-        $ressource = $this->createResource($parameters);
+        $resource = $this->createResource($parameters);
 
-        $crawler = $this->client->request('GET', $ressource);
+        $crawler = $this->client->request('GET', $resource);
 
         $comics = $crawler->filter('.comics-container')->each(function (Crawler $node) {
 
